@@ -1,0 +1,129 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.tbh-search {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  div{
+    margin: auto;
+    input{
+      height: 30px;
+      width: 100%;
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid grey;
+      outline: none;
+    }
+    ion-icon{
+      font-size: 30px;
+      color: #3b3b3b;
+      margin-left: 10px;
+    }
+  }
+}
+.pressed-effect {
+  color: #ff0088;
+  background-color: #00aeff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgb(61, 194, 255);
+  -moz-box-shadow: 0px 0px 5px 5px rgb(61, 194, 255);
+  box-shadow: 0px 0px 5px 5px rgb(61, 194, 255);
+}
+.col-10 {
+  width: 10%;
+}
+.col-20 {
+  width: 20%;
+}
+.col-30 {
+  width: 30%;
+}
+.col-40 {
+  width: 40%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-60 {
+  width: 60%;
+}
+.col-70 {
+  width: 70%;
+}
+.col-80 {
+  width: 80%;
+}
+.col-90 {
+  width: 90%;
+}
+.col-100 {
+  width: 100%;
+}
+.search-box{
+  height: 100%;
+  background-color: #ebebeb;
+  margin-top: -8px;
+  div{
+    padding: 3%;
+    padding-left: 5%;
+    p{
+      margin: 0;
+      padding: 0;
+      background-color: #ebebeb;
+      margin-top: 8px;
+    }
+  }
+}
+.main-container {
+  .post-container {
+    border-radius: 4px;
+    background-color: #ecfffb;
+    margin: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2%;
+    -webkit-box-shadow: 2px 2px 3px 0px #535a58;
+    -moz-box-shadow: 2px 2px 3px 0px #535a58;
+    box-shadow: 2px 2px 3px 0px #535a58;
+    .head-container {
+      .pic-section {
+
+      }
+      .name-section {
+        label{
+          font-size: 16px;
+          font-weight: bold;
+        }
+        p{
+          padding: 0px;
+          margin: 0px;
+          font-size: 14px;
+        }
+      }
+      .button-section {
+        .btn-primary {
+          background-color: tomato;
+          height: 30px;
+          border-radius: 4px;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          box-shadow: 2px 2px 3px 0px black;
+        }
+      }
+    }
+    .body-section {
+      .content-area {
+
+      }
+      .picture-area {
+
+      }
+    }
+    .footer-container {
+
+    }
+  }
+}

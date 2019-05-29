@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="tbh-search row">
+      <div class="col-90">
+          <input type="text" (focus)="focusSearch()" (focusout)="focusSearchOut()">
+      </div>
+      <div class="col-10">
+          <ion-icon name="mic" *ngIf="isCanMikeActive" [style.color]= "recording? '#ff0088': ''" [ngClass]="recording? 'pressed-effect': ''" (touchstart)="record($event)" (touchend)="recordStop($event)"></ion-icon>
+          <ion-icon name="mic-off" *ngIf="!isCanMikeActive"></ion-icon>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="isSearchFocused" class="search-box">
+    <div>
+      <p>Stuff</p>
+      <p>Stuff</p>
+    </div>
+  </div>
+  <div *ngIf="!isSearchFocused" *ngFor="let audio of audioList" class="main-container">
+    <div class="post-container">
+      <div class="head-container row">
+        <div class="pic-section col-10">
+          <img>
+        </div>
+        <div class="name-section col-70">
+          <label>{{audio.filename}}</label>
+          <p>{{audio.filename}}</p>
+        </div>
+        <div class="button-section col-20">
+          <button class="btn-primary">Follow</button>
+        </div>
+      </div>
+      <div class="body-container">
+        <div class="content-area">
+
+        </div>
+        <div class="picture-area">
+
+        </div>
+      </div>
+      <div class="footer-container">
+
+      </div>
+    </div>
+  </div>
+</ion-content>
